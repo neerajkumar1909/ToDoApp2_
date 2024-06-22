@@ -1,0 +1,94 @@
+body {
+  background-color: grey;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* width: 100vh; */
+}
+
+.center-container {
+  height: fit-content;
+  width: 600px;
+  /* margin-left: 12px;  */
+  /* border: 2px solid black; */
+  border-radius: 20px;
+  padding: 20px;
+  background: linear-gradient(#145277, #83d0cb);
+}
+.input-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input-box-todo {
+  width: 390px;
+  height: 35px;
+  border-radius: 15px;
+  padding-left: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  border:none;
+}
+
+.input-box-todo:focus{
+  outline: none;
+}
+
+.app-heading {
+  font-family: cursive;
+  color: white;
+}
+
+.todo-hr{
+  height: 5px;
+  background-color: white;
+}
+
+.add-btn {
+  /* margin-left: 0; */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+  background-color: blue;
+}
+
+.add-btn:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.list-item {
+  list-style-type: decimal;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: larger;
+  color: white;
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.icons {
+  color: black;
+  text-align: end;
+  justify-content: end;
+}
+
+.list-item .icons:hover {
+  color: red;
+  cursor: not-allowed;
+}
